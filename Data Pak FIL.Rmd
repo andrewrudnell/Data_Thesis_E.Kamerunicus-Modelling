@@ -1,0 +1,60 @@
+---
+title: "JURNAL FIL"
+author: "Andrew Yoel"
+date: "3/24/2021"
+output:
+  pdf_document:
+     latex_engine: xelatex
+  html_document: default
+---
+```{r include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r figurename, echo=FALSE, fig.cap="Jurnal Pak FIL", out.width = '90%'}
+knitr::include_graphics("jurnal fil.png")
+```
+
+```{r}
+# Import Library
+library(tidyverse); library(caret); library(openxlsx); library(skimr); library(car);library(openxlsx)
+```
+
+
+```{r}
+#Set Direktori
+setwd("~/Documents")
+```
+
+```{r}
+#Import Data
+data<- read.xlsx("data 1 DIB FIL.xlsx")
+```
+
+```{r}
+# EDA 
+attach(data)
+str(data)
+skim(data)
+```
+
+```{r}
+#Visualisai Distribusi Data
+qqPlot(data$Male.Flower)
+```
+
+```{r}
+#modelling (Pollynomial Regression)
+lmpol<- lm(Total.E.Kamerunicus ~ poly(Male.Flower, 4, raw = TRUE), data = data)
+summary(lmpol)
+```
+
+```{r}
+#Model Visualisation
+ggplot(data, aes(Male.Flower, Total.E.Kamerunicus) ) +
+  labs(x ="Male Flower ", y = "E.Kameruncicus") + 
+  ggtitle("Relationship Between Male Flower & Population of E. Kamerunicus") +
+  geom_smooth(method = lm, formula = y ~ poly(x, 4, raw = TRUE), family =poisson(link = "log")) +
+  theme(plot.title = element_text(hjust = 0.5))
+```
+
