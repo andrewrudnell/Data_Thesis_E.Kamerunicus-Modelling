@@ -4,7 +4,7 @@ A Thesis Project for Volatile Compound Project in Sulung Research Station
 
 This Repository is about exploring and predicting red wine quality. The dataset used in this project can be found [here](https://www.kaggle.com/uciml/red-wine-quality-cortez-et-al-2009)
 
-Abstract
+# Abstract
 The increase productivity of oil palm in Indonesia, especially in Central Kalimantan, cannot be separated from the role of the insect pollinator Elaeidobius kamerunicus Faust, which was released in March 1983. Since the release of the E. kamerunicus beetle as a new insect pollinator for oil palm in Indonesia, in general There was an increase in production components, namely an increase in bunch weight, the value of oil palm fruit sets and CPO per ha. This increase is supported by environmental factors that are conducive to the activity and population of E. kamerunicus in the field. The E. kamerunicus beetle is quite well adapted to Indonesia and its population plays an important role in the pollination of oil palm in the field. Analysis of covariance (ANCOVA) was used to determine significant differences between soil type tested and month period in term of total E. kamerunicus. Polynomial regression was used to determine significant differences between each male flower count, estimated total of E. kamerunicus visiting in E. guinensis male flower. Clustering heatmap were used to represent the chemical composition variability among the oil palm which planted in three different soil (clay, sand, shallow organic. Data in this article showed that the male flower count and climates had an effect on preference E.camerunicus to visiting male flower in Elaeis guinensis.
 
 
