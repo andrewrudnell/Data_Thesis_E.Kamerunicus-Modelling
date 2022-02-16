@@ -34,30 +34,3 @@ The steps I took to do the predictions are:
 ## Model Selection Results
 
 The best model evaluation (least RMSE and highest R square) was actually with Random Forest Regressor, but Random Forest result cannot be extrapolated, therefore, I use Ridge regression instead, a model known for handling multicoliearity, which is prevalent in my data. The best data set was after dropping outliers, with **initial RMSE 10.62% and R square 0.35**. 
-
-## Result
-
-Result of this analytic is
-
-### 1. EDA
-
-
-![alt text](https://github.com/bgt90/Wine-Quality-Prediction/blob/master/home.png)
-
-### 2. Modelling
-
-![alt text](https://github.com/bgt90/Wine-Quality-Prediction/blob/master/prediction.png)
-
-### 3. PCA
-
-![alt text](https://github.com/bgt90/Wine-Quality-Prediction/blob/master/result.png)
-
-### 4. CLustering Heatmap
-
-![alt text](https://github.com/bgt90/Wine-Quality-Prediction/blob/master/dataset.png)
-
-### 5. Visualisation
-
-![alt text](https://github.com/bgt90/Wine-Quality-Prediction/blob/master/visualisation.png)
-
-
